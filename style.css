@@ -1,0 +1,49 @@
+
+html{
+    background-color: rgb(31, 60, 114);
+    color: black;
+}  
+#heading{
+    text-align: center;
+    color: rgb(249, 253, 253);
+    margin-bottom:40px;
+   
+}
+h3{
+    color: aliceblue;
+}
+#main{
+    height: 450px;
+    width: 450px;
+    background-color: rgb(105, 133, 197);
+    display: grid;
+    margin: 0 auto;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+    gap: 5px;
+    border-radius: 1rem;
+}
+#main *{
+    cursor: pointer;
+    background-color: rgb(210, 214, 226);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    border-radius: 2rem;
+}
+.bt{
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    color: rgb(249, 253, 253);
+    gap: 100px;
+}
+#resetbt{
+    border-radius: 5px;
+    padding: 4px;
+}
+#newbt{
+    border-radius: 5px;
+    padding: 4px;
+}
