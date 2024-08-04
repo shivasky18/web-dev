@@ -34,10 +34,16 @@ const resetgame=() => {
 
 }
 
+let count=0;
+
 boxes.forEach((box) => {
     box.addEventListener("click",() =>{
         console.log("box clicked")
-        if(turnx){
+        count++;
+        if(count==9){
+            alert("IT IS A DRAW");
+        }
+        else if(turnx){
             box.innerHTML="X"
             turnx=false
         }
@@ -79,7 +85,6 @@ const winfun=() =>{
                 }
                 console.log("WINNER");
             }
-        alert("IT IS A DRAW");
         }
     }
 }
