@@ -39,11 +39,7 @@ let count=0;
 boxes.forEach((box) => {
     box.addEventListener("click",() =>{
         console.log("box clicked")
-        count++;
-        if(count==9){
-            alert("IT IS A DRAW");
-        }
-        else if(turnx){
+        if(turnx){
             box.innerHTML="X"
             turnx=false
         }
@@ -51,6 +47,7 @@ boxes.forEach((box) => {
             box.innerHTML="O"
             turnx=true
         }
+        count++;
         box.disabled=true;
         winfun();
     })
